@@ -1,8 +1,1 @@
-join(
-  union(
-    split(trim(base64ToString(replace(body('HTTP_GitHub_GET')?['content'], decodeUriComponent('%0A'), ''))), decodeUriComponent('%0A')),
-    variables('maliciousIPs')
-  ),
-  decodeUriComponent('%0A')
-)
 185.220.101.1
